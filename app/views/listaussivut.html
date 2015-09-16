@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="page-header">
+    <h1>Tämä on listaussivu!</h1>
+  </div>
+
+<p>
+    <a href="#" class="btn btn-success">Lisää Pokemon</a>
+  </p>
+
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Nimi</th>
+        <th>Tyyppi</th>
+        <th>Sukupolvi</th>
+        <th>Status</th>
+        <th>Lisäyspäivä</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Listataan pelit tähän -->
+      <tr>
+        <td><a href="/pokeka/esittelysivu">Pidgey</a></td>
+        <td>Normaali/Lentotyyppi</td>
+        <td>1</td>
+        <td><label class="label label-success">Tiimissä</label></td>
+        <td>16.9.2015</td>
+        <th><a class="btn btn-default btn-sm" href="/pokeka/muokkaussivu">Muokkaa</a></th>
+      </tr>
+    </tbody>
+  </table
+
+{% endblock %}

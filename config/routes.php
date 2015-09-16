@@ -4,6 +4,12 @@
     HelloWorldController::index();
   });
 
-  $routes->get('/hiekkalaatikko', function() {
-    HelloWorldController::sandbox();
+  $routes->get('/listaussivut', function() {
+    HelloWorldController::listaussivut();
+  });
+  $routes->get('/muokkaussivu', function() {
+      HelloWorldController::muokkaussivu();
+  });
+  $routes->get('/esittelysivu', function(){
+      HelloWorldController::esittelysivu();
   });

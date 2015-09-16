@@ -1,0 +1,23 @@
+
+
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="page-header">
+    <h1>Tämä on esittelysivu!</h1>
+  </div>
+<p>
+    <button class="btn btn-danger">Poista</button> <a href="/pokeka/muokkaussivu" class="btn btn-default">Muokkaa</a>
+  </p>
+  <!-- Tiedot tulee listana tähän -->
+  <ul>
+    <li><strong>Nimi:</strong> Pidgey</li>
+    <li><strong>Tyyppi:</strong> Normaali/Lentotyyppi</li>
+    <li><strong>Status:</strong> <label class="label label-success">Tiimissä</label></li>
+    <li><strong>Lisäyspäivä:</strong> 16.9.2015</li>
+  </ul>
+  <!-- Kuvaus tulee tähän -->
+  <p>
+    Pidgey on söpö lintupokemon
+  </p>
+{% endblock %}

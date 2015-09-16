@@ -11,4 +11,13 @@
       // Testaa koodiasi täällä
       echo 'Hello World!';
     }
+    public static function listaussivut(){
+        View::make('listaussivut.html');
+    }
+    public static function muokkaussivu(){
+        View::make('muokkaussivu.html');
+    }
+    public static function esittelysivu(){
+        View::make('esittelysivu.html');
+    }
   }

@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="page-header">
+    <h1>Tämä on muokkaussivu!</h1>
+  </div>
+ <form>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox">
+        Lisää tiimiin
+      </label>
+    </div>
+    <div class="form-group">
+      <label>Nimi</label>
+      <input class="form-control" value="Pidgey" type="text">
+    </div>
+    <div class="form-group">
+      <label>Tyyppi</label>
+      <input class="form-control" value="Normaali/Lentotyyppi" type="text">
+    </div>
+    <div class="form-group">
+      <label>Sukupolvi</label>
+      <input class="form-control" value="1" type="text">
+    </div>
+    <div class="form-group">
+      <label>Kuvaus</label>
+      <textarea class="form-control">      
+      </textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Tallenna</button>
+    </div>
+  </form>
+{% endblock %}
